@@ -11,9 +11,8 @@ class Page2 extends StatelessWidget {
           margin: const EdgeInsets.fromLTRB(10, 10, 10, 10),
           
         ),
-        Center(),
-        FloatingActionButton(
-            child: Icon(Icons.camera),
+        Center( child :FloatingActionButton(
+            child: Icon(Icons.camera_alt),
             onPressed: () async {
               String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
                 '#A03131',
@@ -22,7 +21,8 @@ class Page2 extends StatelessWidget {
                 ScanMode.QR,
               );
               abrirUrl(barcodeScanRes);
-            }),
+            }),),
+        
       ],
     );
   }

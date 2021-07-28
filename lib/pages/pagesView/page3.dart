@@ -13,32 +13,32 @@ class _ImagePickerState extends State<ImagePickerWidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-        appBar: AppBar(
-          title: Text("ImagePicker"),
-        ),
-        body: SingleChildScrollView(
+    return Center(
+        // appBar: AppBar(
+        //   title: Text("ImagePicker"),
+        // ),
+        // body: SingleChildScrollView(
           child: Column(
             children: <Widget>[
               _ImageView(_imgPath),
-              RaisedButton(
-                onPressed: _takePhoto,
-                child: Text ("Foto"),
-              ),
-              RaisedButton(
+              // RaisedButton(
+              //   onPressed: _takePhoto,
+              //   child: Text ("Foto"),
+              // ),
+              RaisedButton(color:Colors.greenAccent,
                 onPressed: _openGallery,
                                  child: Text ("Seleccionar foto"),
               ),
             ],
           ),
-        ));
+        );
   }
 
     //  / * Control de imagen * /
   Widget _ImageView(imgPath) {
     if (imgPath == null) {
       return Center(
-                 child: Text ("Seleccione una foto o tome una foto"),
+                 child: Text ("Seleccione una Foto "),
       );
     } else {
       return Image.file(

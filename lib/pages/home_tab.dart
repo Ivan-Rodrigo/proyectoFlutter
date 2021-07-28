@@ -11,7 +11,7 @@ class HomeTab extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Home Tab'),
+        title: Text('Scanner Vcard'),
         actions: [],
       ),
       body: HomeTabContainer(),

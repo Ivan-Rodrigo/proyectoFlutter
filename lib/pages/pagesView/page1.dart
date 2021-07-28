@@ -9,21 +9,20 @@ class Page1 extends StatefulWidget{
 }
 
 class _generateQr extends State<Page1> {
-  Completer<WebViewController> _controller = Completer<WebViewController>();
-  final Set<String> _favorites = Set<String>();
+  // Completer<WebViewController> _controller = Completer<WebViewController>();
+  // final Set<String> _favorites = Set<String>();
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Generador de Qr'),
-       
-      ),
-      body:  RaisedButton(
-              child: Text("url Qr"),
+    return Center(child:RaisedButton(
+              child: Text("Ir a Crear QR"),splashColor: Colors.white10,color: Colors.greenAccent,
                 onPressed: (){
               launch("https://app.uqr.me/panel/414636/qrs/808602/1541685/edit-content#qr-content");
-            }),
+            }), 
+      // appBar: AppBar(
+      //   title: const Text('Generador de Qr'),
+       
+      // ),
       
       
     );

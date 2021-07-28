@@ -19,12 +19,12 @@ class _generateQr extends State<Page1> {
         title: const Text('Generador de Qr'),
        
       ),
-      body: WebView(
-        initialUrl: 'https://www.qr-code-generator.com/solutions/dynamic-url-qr-code/?ut_source=google_c&ut_medium=cpc&ut_campaign=g_en_dsa&ut_content=solutions_multi_url&ut_term=_b&gclid=Cj0KCQjw3f6HBhDHARIsAD_i3D8rwx6BfthRfiFmfoY5bYis1dcRLjNu1dtsJKCd69JsTqaZkMV3_ogaAolIEALw_wcB',
-        onWebViewCreated: (WebViewController webViewController) {
-          _controller.complete(webViewController);
-        },
-      ),
+      body:  RaisedButton(
+              child: Text("url Qr"),
+                onPressed: (){
+              launch("https://app.uqr.me/panel/414636/qrs/808602/1541685/edit-content#qr-content");
+            }),
+      
       
     );
   }

@@ -16,6 +16,8 @@ class CustomNavigations extends StatelessWidget {
               icon: Icon(Icons.navigation), label: 'Menu Generar Qr'),
           BottomNavigationBarItem(
               icon: Icon(Icons.scanner), label: 'Scan Qr'),
+              BottomNavigationBarItem(
+              icon: Icon(Icons.photo), label: 'Select Photo'),
           
         ]);
   }
